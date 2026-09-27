@@ -1,0 +1,55 @@
+# Byte-compiled / cache
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+
+# Distribution / packaging
+build/
+dist/
+*.egg-info/
+.eggs/
+
+# Environments
+.venv/
+venv/
+env/
+ENV/
+
+# Testing and coverage
+.pytest_cache/
+.coverage
+.coverage.*
+htmlcov/
+.tox/
+
+# Type checkers and linters
+.mypy_cache/
+.ruff_cache/
+.dmypy.json
+
+# Editors and OS
+.idea/
+.vscode/
+*.swp
+.DS_Store
+Thumbs.db
+
+# Notebook clutter
+.ipynb_checkpoints/
+
+# Large binary artefacts are excluded to keep the repository light.
+# Regenerate them with `python run_analysis.py`.
+outputs/figures/*.png
+outputs/tables/*.csv
+
+# Local run logs
+outputs/pkg_run.txt
+outputs/pkg_err.txt
+outputs/audit.txt
+outputs/imp_err.txt
+outputs/err.txt
+
+# Original assignment brief (institutionally supplied, not part of the solution)
+Regression Analysi Datasets lab exercise final.docx
+Refer to the word document attached.txt
