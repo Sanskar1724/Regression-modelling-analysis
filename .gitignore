@@ -55,3 +55,9 @@ outputs/e.txt
 # the duplicate that Word keeps locked in the project root.
 /Regression Analysi Datasets lab exercise final.docx
 /Refer to the word document attached.txt
+
+# The generated Word report is a SUBMISSION artefact, not source. It is rebuilt
+# with `python build_report_docx.py`, so it is deliberately not committed.
+/Lab_Assignment_Report_California_Housing.docx
+~$*.docx
+~$*.docx#
