@@ -41,7 +41,7 @@ STUDENT_BATCH = "B1"
 SUBJECT = "Exploratory Data Analysis (EDA)"
 INSTITUTION = "Walchand College of Engineering, Sangli"
 SUBMISSION_DATE = "27 September 2026"
-GITHUB_URL = "https://github.com/Sanskar1724/-Regression-modelling-analysis"
+GITHUB_URL = "https://github.com/Sanskar1724/Regression-modelling-analysis"
 DATASET_NAME = "Dataset 1 - California Housing"
 
 
@@ -1426,8 +1426,8 @@ def build_github_section(document):
 
     document.add_heading("16.1 How to Reproduce These Results", level=2)
     add_output_block(document, """
-git clone https://github.com/Sanskar1724/-Regression-modelling-analysis.git
-cd -Regression-modelling-analysis
+git clone https://github.com/Sanskar1724/Regression-modelling-analysis.git
+cd Regression-modelling-analysis
 
 python -m venv .venv
 # Windows:      .venv\\Scripts\\activate

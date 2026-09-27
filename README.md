@@ -165,8 +165,8 @@ Full set of 23 figures is in [`outputs/figures/`](outputs/figures/); all 25 resu
 ## Usage
 
 ```bash
-git clone https://github.com/Sanskar1724/-Regression-modelling-analysis.git
-cd -Regression-modelling-analysis
+git clone https://github.com/Sanskar1724/Regression-modelling-analysis.git
+cd Regression-modelling-analysis
 
 python -m venv .venv
 # Windows:     .venv\Scripts\activate
