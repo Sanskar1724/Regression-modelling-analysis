@@ -1,0 +1,20 @@
+# Runtime dependencies for the California Housing regression analysis.
+# Pinned to the versions the reported results were produced with.
+
+# --- core scientific stack -------------------------------------------------
+numpy==1.26.4
+pandas==2.2.2
+scipy==1.13.1
+
+# --- modelling and inference ----------------------------------------------
+scikit-learn==1.5.0
+statsmodels==0.14.4
+
+# --- plotting and presentation --------------------------------------------
+matplotlib==3.8.4
+seaborn==0.13.2
+
+# --- dataset source --------------------------------------------------------
+# scikit-learn downloads and caches the dataset on first use, so no separate
+# data dependency is required. To pin the exact archive instead, install:
+#   ucimlrepo==0.0.7
