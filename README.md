@@ -98,6 +98,20 @@ The full written report with every output table, comment and conclusion is in
 
 ---
 
+## Key figures
+
+| | |
+|---|---|
+| ![Correlation heatmap](outputs/figures/fig06_correlation_heatmap.png) | ![VIF per predictor](outputs/figures/fig11_vif.png) |
+| **Pearson correlation matrix** - note the `-0.925` block for the two coordinates | **VIF per predictor** - four variables breach the threshold of 5 |
+| ![Model comparison](outputs/figures/fig15_model_comparison.png) | ![Actual vs predicted](outputs/figures/fig20_actual_vs_predicted.png) |
+| **Model comparison** across R2, RMSE and MAE | **Actual vs predicted** - the 45-degree line is the reference |
+
+Full set of 23 figures is in [`outputs/figures/`](outputs/figures/); all 25 result tables are in
+[`outputs/tables/`](outputs/tables/).
+
+---
+
 ## Contents
 
 | File | Purpose |

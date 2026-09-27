@@ -1,0 +1,10 @@
+Model,rank_R2,rank_AdjR2,rank_MAE,rank_MSE,rank_RMSE,avg_rank
+Random Forest Regressor,1,1,1,1,1,1.0
+Gradient Boosting Regressor,2,2,2,2,2,2.0
+Polynomial Regression (deg 2),3,3,3,3,3,3.0
+Lasso Regression,4,4,6,4,4,4.4
+Elastic Net Regression,5,5,5,5,5,5.0
+Ridge Regression,6,6,7,6,6,6.2
+Multiple Linear Regression,7,7,8,7,7,7.2
+Robust Regression (Huber),8,8,4,8,8,7.2
+Simple Linear Regression,9,9,9,9,9,9.0

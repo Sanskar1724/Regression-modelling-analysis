@@ -1,0 +1,10 @@
+,dtype,missing,missing_%,n_unique
+MedInc,float64,0,0.0,12928
+HouseAge,float64,0,0.0,52
+AveRooms,float64,0,0.0,19392
+AveBedrms,float64,0,0.0,14233
+Population,float64,0,0.0,3888
+AveOccup,float64,0,0.0,18841
+Latitude,float64,0,0.0,862
+Longitude,float64,0,0.0,844
+MedHouseVal,float64,0,0.0,3842

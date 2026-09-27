@@ -1,0 +1,10 @@
+Model,MAE_dollars,RMSE_dollars
+Random Forest Regressor,32681.0,50396.0
+Gradient Boosting Regressor,35500.0,52148.0
+Polynomial Regression (deg 2),46700.0,68140.0
+Lasso Regression,53314.0,74464.0
+Elastic Net Regression,53314.0,74467.0
+Ridge Regression,53318.0,74550.0
+Multiple Linear Regression,53320.0,74558.0
+Robust Regression (Huber),51585.0,75844.0
+Simple Linear Regression,62991.0,84209.0

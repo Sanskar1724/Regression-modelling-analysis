@@ -1,0 +1,1 @@
+Refer to the word document attached. This document has 16 different datasets which are useful for analysing different regression techniques with target variables. Everyone has to select one dataset and apply all the tasks highlighted in yellow colour. Provide a detailed report of all the tasks with output and your own comment/conclusion and justification. 

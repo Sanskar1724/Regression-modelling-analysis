@@ -1,0 +1,6 @@
+Assumption,Test,Statistic,p_value,Result
+Linearity,Overall F-test,3261.3767571194944,0.0,PASS
+Independence,Durbin-Watson,1.961792831857718,,PASS (DW ~ 2)
+Homoscedasticity,Breusch-Pagan,1170.5133505008096,2.2509787160666225e-247,FAIL (heteroscedastic)
+Normality,Jarque-Bera,9371.465792782903,0.0,FAIL (non-normal)
+Multicollinearity,VIF,9.206133747541132,,"FAIL (VIF > 5, moderate)"
