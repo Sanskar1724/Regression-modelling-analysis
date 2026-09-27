@@ -1,0 +1,32 @@
+                            OLS Regression Results                            
+==============================================================================
+Dep. Variable:            MedHouseVal   R-squared:                       0.613
+Model:                            OLS   Adj. R-squared:                  0.612
+Method:                 Least Squares   F-statistic:                     3261.
+Date:                Sun, 27 Sep 2026   Prob (F-statistic):               0.00
+Time:                        10:55:48   Log-Likelihood:                -17998.
+No. Observations:               16512   AIC:                         3.601e+04
+Df Residuals:                   16503   BIC:                         3.608e+04
+Df Model:                           8                                         
+Covariance Type:            nonrobust                                         
+==============================================================================
+                 coef    std err          t      P>|t|      [0.025      0.975]
+------------------------------------------------------------------------------
+const          2.0719      0.006    369.848      0.000       2.061       2.083
+MedInc         0.8544      0.009     95.697      0.000       0.837       0.872
+HouseAge       0.1225      0.006     19.665      0.000       0.110       0.135
+AveRooms      -0.2944      0.016    -18.677      0.000      -0.325      -0.264
+AveBedrms      0.3393      0.014     23.556      0.000       0.311       0.367
+Population    -0.0023      0.006     -0.387      0.699      -0.014       0.009
+AveOccup      -0.0408      0.006     -7.253      0.000      -0.052      -0.030
+Latitude      -0.8969      0.017    -52.767      0.000      -0.930      -0.864
+Longitude     -0.8698      0.017    -52.117      0.000      -0.903      -0.837
+==============================================================================
+Omnibus:                     3333.187   Durbin-Watson:                   1.962
+Prob(Omnibus):                  0.000   Jarque-Bera (JB):             9371.466
+Skew:                           1.071   Prob(JB):                         0.00
+Kurtosis:                       6.006   Cond. No.                         6.54
+==============================================================================
+
+Notes:
+[1] Standard Errors assume that the covariance matrix of the errors is correctly specified.

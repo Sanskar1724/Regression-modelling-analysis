@@ -1,0 +1,72 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+jobs:
+  verify:
+    name: Verify the analysis runs and reproduces
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+          cache: pip
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
+
+      - name: Byte-compile all sources
+        run: python -m compileall -q src run_analysis.py
+
+      - name: Run the full analysis
+        run: python run_analysis.py
+
+      - name: Check every figure was produced
+        run: |
+          count=$(ls outputs/figures/*.png | wc -l)
+          echo "figures produced: $count"
+          if [ "$count" -ne 23 ]; then
+            echo "ERROR: expected 23 figures, found $count"
+            exit 1
+          fi
+
+      - name: Check every table was produced
+        run: |
+          count=$(ls outputs/tables/ | wc -l)
+          echo "tables produced: $count"
+          if [ "$count" -ne 25 ]; then
+            echo "ERROR: expected 25 tables, found $count"
+            exit 1
+          fi
+
+      - name: Verify the headline result is stable
+        run: |
+          python - <<'PY'
+          import pandas as pd
+          table = pd.read_csv("outputs/tables/17_model_comparison.csv", index_col=0)
+          best = table["R2"].idxmax()
+          print("best model:", best, "R2 =", round(table["R2"].max(), 4))
+          assert best == "Random Forest Regressor", f"unexpected winner: {best}"
+          assert abs(table["R2"].max() - 0.8062) < 0.01, "R2 drifted from the reported value"
+          print("headline result reproduced")
+          PY
+
+      - name: Upload figures and tables as artefacts
+        uses: actions/upload-artifact@v4
+        with:
+          name: analysis-outputs
+          path: |
+            outputs/figures/
+            outputs/tables/
+            outputs/console_output.txt
+          retention-days: 30
