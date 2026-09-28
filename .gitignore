@@ -61,3 +61,8 @@ outputs/e.txt
 /Lab_Assignment_Report_California_Housing.docx
 ~$*.docx
 ~$*.docx#
+
+# The report generator is kept out of version control for the same reason:
+# python-docx is not a project dependency (see requirements.txt), so this script
+# is a local-only submission tool rather than part of the reproducible analysis.
+/build_report_docx.py
